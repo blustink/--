@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交集选择器</title>
+    <!-- 交集用点 -->
+    <style>
+        .rich {
+            color: darkgoldenrod;
+        }
+        .beauty {
+            color: blueviolet;
+        }
+        /* 可以是标签+类名 */
+        p.beauty {
+            color: aqua;
+        }
+        /* 可以是类名+类名 */
+        .rich.beauty {
+            color: aqua;
+        }
+        /* 不能是标签+标签 */
+    </style>
+</head>
+<body>
+    <h2 class="rich">土豪张三</h2>
+    <h2 class="beauty">明星李四</h2>
+    <h2 class="rich beauty">富豪李华</h2>
+    <hr>
+    <p class="civilian">平民张强</p>
+    <p class="beauty">小猫</p>
+</body>
+</html>

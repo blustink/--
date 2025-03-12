@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>框架标签</title>
+</head>
+
+<body>
+    <!-- 通过iframe嵌入网页 -->
+    <!-- <iframe src="https://www.taobao.com" width="300" height="300" frameborder="0"></iframe> -->
+
+    <!-- 通过iframe嵌入广告网页 -->
+    <!-- <iframe src="https://www.taobao.com" width="1000" height="1000" frameborder="0"></iframe> -->
+
+    <!-- 通过iframe嵌入图片 -->
+    <!-- <iframe src="./resource/乌鲁木齐进近扇区空域图.png" width="300" height="300" frameborder="0"></iframe> -->
+
+    <!-- 与超链接的属性target配合使用 -->
+    <a href="https://www.taobao.com" target="tb">淘宝</a><br>
+    <iframe name="tb" width="300" height="300" frameborder="0"></iframe>
+
+    <!-- 与表单的属性target配合使用 -->
+    <form action="https://so.toutiao.com/search" target="container">
+        <!-- <input type="text" name="name"> -->
+        <input type="text" name="keyword" >
+        <button>搜索</button>
+    </form>
+    <iframe name="container" width="300" height="300" frameborder="0"></iframe>
+</body>
+
+</html>

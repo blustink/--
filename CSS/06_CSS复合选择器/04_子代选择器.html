@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子代选择器</title>
+    <style>
+        /* 子代用> */
+        div>a{
+            color:blueviolet;
+        }
+        div>p>a{
+            color: chocolate;
+        }
+
+        /* 两种方法 */
+        /* 通过分析源代码找关系 */
+        div>div>a{
+            color: crimson;
+        }
+        /* 设置class再加子类 */
+        .qi>a{
+            color: deepskyblue;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#">张三</a>
+        <a href="#">李四</a>
+        <a href="#">王五</a>
+        <p>
+            <a href="#">赵六</a>
+            <!-- p里面不能有div，div会被扔出p，与a成为兄弟 -->
+            <div class="qi">
+                <a href="#">孙七</a>
+            </div>
+        </p>
+    </div>
+</body>
+</html>

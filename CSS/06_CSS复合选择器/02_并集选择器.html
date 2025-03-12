@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>并集选择器</title>
+    <!-- 并集用逗号 -->
+    <style>
+        .rich {
+            color: darkgoldenrod;
+
+        }
+
+        .beauty {
+            color: blueviolet;
+        }
+
+        .cat {
+            color: aqua;
+        }
+
+        .civilian {
+            color: brown;
+        }
+        /* 并集选择器，任何选择器都可以 */
+        #dsew,
+        .rich,
+        .beauty,
+        .cat,
+        .civilian {
+            font-size: 40px;
+            background-color: dimgray;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="rich">土豪张三</h2>
+    <h2 class="beauty">明星李四</h2>
+    <h2>破产李华</h2>
+    <hr>
+    <p class="civilian">平民张强</p>
+    <p class="cat">小猫</p>
+</body>
+
+</html>

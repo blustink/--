@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <!-- 登录页面就是一个表单 -->
+    <!-- action就是搜索网站，/s能够直接给出搜索结果 -->
+     <form action="https://www.baidu.com/s">
+        <!-- 每个搜索网站的name都不同 -->
+        <input type="text" name="wd">
+        <button>百度搜索</button>
+     </form>
+
+     <hr>
+
+     <form action="https://search.jd.com/s" target="_blank"  method="get">
+
+        <input type="text" name="keyword">
+        <button>京东搜索</button>
+     </form>
+</body>
+</html>

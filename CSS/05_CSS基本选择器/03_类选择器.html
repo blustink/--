@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>类选择器</title>
+    <!-- 设置类，使得每个类样式相同 -->
+    <!-- class格式不能是纯数字 -->
+    <style>
+        h1 {
+            color: blue;
+            font-size: 60px;
+        }
+
+        h2 {
+            color: aqua;
+            font-style: italic;
+        }
+
+        .name {
+            color: aqua;
+            font-style: italic;
+        }
+
+        .size {
+            font-size: 60px;
+        }
+
+        .fruit {
+            color: blue;
+            font-size: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>学习CSS</h1>
+    <h2>内部样式</h2>
+    <p class="name">我</p>
+    <!-- 一个标签不能写多个class，但class名可以有多个 -->
+    <p class="name size">你</p>
+    <p class="name">他</p>
+
+    <p class="fruit">苹果</p>
+    <p class="fruit">香蕉</p>
+    <p class="fruit">梨子</p>
+    <h2>样式</h2>
+</body>
+
+</html>
